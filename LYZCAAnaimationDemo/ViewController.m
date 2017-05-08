@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LYZAnimationViewController.h"
 
 @interface ViewController ()<CAAnimationDelegate>
 
@@ -21,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"test";
     
     [self lyz_configViews];
 }
@@ -66,8 +68,25 @@
     
 //    [self lyz_groupAnimation];
     
-    [self lyz_groupAnimationQueue];
+//    [self lyz_groupAnimationQueue];
     
+    [self lyz_transitionAnimation];
+    
+}
+
+- (void)lyz_transitionAnimation{
+    
+//    self.view.backgroundColor = [UIColor redColor];
+    
+    CATransition *animation = [CATransition animation];
+    [animation setDuration:1.25f];
+    [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]];
+    [animation setType:kCATransitionReveal];
+    [animation setSubtype:kCATransitionFromTop];
+    
+    [self.navigationController.view.layer addAnimation:animation forKey:@"push"];
+    LYZAnimationViewController *vc = [[LYZAnimationViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)lyz_basicAnimation{

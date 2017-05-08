@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE5443001EC0469000311024 /* LYZAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5442FF1EC0469000311024 /* LYZAnimationViewController.m */; };
 		AEB914D81EB30A6500E5FA45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB914D71EB30A6500E5FA45 /* main.m */; };
 		AEB914DB1EB30A6500E5FA45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB914DA1EB30A6500E5FA45 /* AppDelegate.m */; };
 		AEB914DE1EB30A6500E5FA45 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB914DD1EB30A6500E5FA45 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE5442FE1EC0469000311024 /* LYZAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYZAnimationViewController.h; sourceTree = "<group>"; };
+		AE5442FF1EC0469000311024 /* LYZAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYZAnimationViewController.m; sourceTree = "<group>"; };
 		AEB914D31EB30A6500E5FA45 /* LYZCAAnaimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYZCAAnaimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB914D71EB30A6500E5FA45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AEB914D91EB30A6500E5FA45 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 		AEB914D51EB30A6500E5FA45 /* LYZCAAnaimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				AE5442FE1EC0469000311024 /* LYZAnimationViewController.h */,
+				AE5442FF1EC0469000311024 /* LYZAnimationViewController.m */,
 				AEB914D91EB30A6500E5FA45 /* AppDelegate.h */,
 				AEB914DA1EB30A6500E5FA45 /* AppDelegate.m */,
 				AEB914DC1EB30A6500E5FA45 /* ViewController.h */,
@@ -274,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEB914DE1EB30A6500E5FA45 /* ViewController.m in Sources */,
+				AE5443001EC0469000311024 /* LYZAnimationViewController.m in Sources */,
 				AEB914DB1EB30A6500E5FA45 /* AppDelegate.m in Sources */,
 				AEB914D81EB30A6500E5FA45 /* main.m in Sources */,
 			);
@@ -509,6 +515,7 @@
 				AEB915021EB30A6600E5FA45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEB915031EB30A6600E5FA45 /* Build configuration list for PBXNativeTarget "LYZCAAnaimationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +524,7 @@
 				AEB915051EB30A6600E5FA45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEB915061EB30A6600E5FA45 /* Build configuration list for PBXNativeTarget "LYZCAAnaimationDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +533,7 @@
 				AEB915081EB30A6600E5FA45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
